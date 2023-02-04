@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "TheRightOne")(type "Legacy")(uri "${KIPRJMOD}/project-library/STM32F103RBT7/STM32F103RBT7.lib")(options "")(descr ""))
+)
