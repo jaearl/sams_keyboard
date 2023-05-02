@@ -5302,7 +5302,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "RShift" (id 1) (at 105.41 172.72 0))
-    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" (id 2) (at 105.41 172.72 0)
+    (property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_2.75u_PCB" (id 2) (at 105.41 172.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 105.41 172.72 0)
@@ -10445,7 +10445,7 @@
       (reference "sw69") (unit 1) (value "FSlash") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
     )
     (path "/0a2fbe5c-c0e6-4b3a-854e-12d87ec302d2"
-      (reference "sw70") (unit 1) (value "RShift") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB")
+      (reference "sw70") (unit 1) (value "RShift") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_2.75u_PCB")
     )
     (path "/35cfa04a-c5c4-4d67-bfb5-7569bc2b66f1"
       (reference "sw71") (unit 1) (value "RAlt") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.25u_PCB")
