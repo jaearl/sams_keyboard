@@ -1,3 +1,4 @@
+#include "stdint.h"
 #include "app_main.h"
 
 #define NUM_ROWS 2
@@ -7,6 +8,19 @@ uint16_t RowPins[] = {ROW1_Pin, ROW7_Pin};
 #define NUM_COLS 2
 GPIO_TypeDef* ColPorts[] = {COLUMN10_GPIO_Port, COLUMN9_GPIO_Port};
 uint16_t ColPins[] = {COLUMN10_Pin, COLUMN9_Pin};
+
+int _write(int file, char *ptr, int len)
+
+{   int DataIdx;
+
+    for(DataIdx = 0; DataIdx < len; DataIdx++)
+    {
+    	ITM_SendChar(*(ptr++));
+    }
+
+     return len;
+
+}
 
 void do_work()
 {
@@ -23,6 +37,7 @@ void do_work()
 			if(HAL_GPIO_ReadPin(ColPorts[j], ColPins[j]))
 			{
 				HAL_GPIO_WritePin(CAPS_LOCK_GPIO_Port, CAPS_LOCK_Pin, GPIO_PIN_SET);
+				printf("Hello world\n");
 			}
 			else
 			{
